@@ -1,4 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+}
+
+#title-container {
+    background-color: rgb(244, 124, 124);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-family: 'Calligraffitti', cursive;
+    font-size: 64px;
+    display: flex;
+}
+
+#pad-container {
+    background-color: rgb(244, 124, 124);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+#drawing-pad {
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    background-color: beige;
+    border-style: solid;
+    border-width: thin;
+
 }
