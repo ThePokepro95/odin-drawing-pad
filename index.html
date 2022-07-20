@@ -13,7 +13,33 @@
         <div id="title">Drawing Pad</div>
     </div>
     <div id="pad-container">
-        <div id="drawing-pad"></div>
+        <div id="drawing-pad-holder">
+            <div id="drawing-pad"></div>
+        </div>
+        <div id="control-panel">
+            <div id="color-selector">
+                <div id="color-text">Select The Color to Draw With</div>
+                <div class="row">
+                    <div id="red" class="color"></div>
+                    <div id="blue" class="color"></div>
+                    <div id="green" class="color"></div>
+                    <div id="yellow" class="color"></div>
+                </div>
+                <div class="row">
+                    <div id="orange" class="color"></div>
+                    <div id="purple" class="color"></div>
+                    <div id="brown" class="color"></div>
+                    <div id="black" class="color selected-color"></div>
+                </div>
+            </div>
+            <div id="drawing-mode">
+
+            </div>
+            <div id="grid-editor"> 
+                <input id="grid-input" placeholder="Input grid size here">
+                <button id="grid-generator">Generate Grid</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

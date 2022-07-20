@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 
+:root {
+    --current-color: black;
+}
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(244, 124, 124);
 }
 
 #title-container {
@@ -26,6 +30,12 @@ body {
     padding: 40px;
 }
 
+#drawing-pad-holder {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 #drawing-pad {
     height: 600px;
     width: 600px;
@@ -34,6 +44,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
 }
 
 .square {
@@ -44,5 +55,90 @@ body {
 }
 
 .activated {
+    background-color: var(--current-color);
+}
+
+#control-panel {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid-editor {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    height: 45px;
+    width: 200px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+#grid-generator {
+    background-color: rgb(250, 212, 212);
+    border-radius: 5px;
+    border-color: transparent;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+}
+
+#color-text {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.color {
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#brown {
+    background-color: brown;
+}
+
+#black {
     background-color: black;
+}
+
+.selected-color {
+    border-color: gray;
 }
