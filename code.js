@@ -1,14 +1,27 @@
-function padCreator(){
+let gridSize = 16;
+padCreator(gridSize);
+
+
+
+
+
+function padCreator(size){
     const drawingPad = document.querySelector('#drawing-pad')
-    for(let i = 0; i < 16; i++){
-        for (let j = 0; j < 16; j++){
+    for(let i = 0; i < size; i++){
+        for (let j = 0; j < size; j++){
             const square = document.createElement('div');
             square.setAttribute('class', 'square');
-            square.style.width = '35px';
-            square.style.height = '35px';
+            let borderOffset = size * 2;
+            square.style.width = ((600 - borderOffset) / size) + "px";
+            square.style.height = ((600 - borderOffset) / size) + "px";
             drawingPad.appendChild(square);
         }
     }
 }
 
-padCreator();
+document.querySelectorAll('.square').forEach(function(item) {
+    item.addEventListener('mouseover', function(){
+        item.classList.add('activated');
+    });
+});
+

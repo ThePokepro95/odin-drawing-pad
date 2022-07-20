@@ -32,11 +32,17 @@ body {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .square {
-    background-color: beige;
+    background-color: white;
     border-style: solid;
-    border-width: thin;
+    border-width: 1px;
+    border-color: lightgray;
+}
 
+.activated {
+    background-color: black;
 }
